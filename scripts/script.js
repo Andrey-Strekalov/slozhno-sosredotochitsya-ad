@@ -26,8 +26,23 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function setTheme(theme) {
-  document.documentElement.className = '';
-  document.documentElement.classList.add(`theme-${theme}`);
+  // Поддерживаем два варианта: класс на :root (html) и класс на .page.
+  // Тесты/макет обычно опираются на `.page.theme_dark/.page.theme_light`,
+  // а скрипт-переключатель удобнее держать на html.
+  const html = document.documentElement;
+  const body = document.body;
+
+  html.classList.remove('theme-dark', 'theme-light');
+  body.classList.remove('theme_dark', 'theme_light');
+
+  if (theme === 'dark') {
+    html.classList.add('theme-dark');
+    body.classList.add('theme_dark');
+  } else if (theme === 'light') {
+    html.classList.add('theme-light');
+    body.classList.add('theme_light');
+  }
+
   localStorage.setItem('theme', theme);
 }
 
