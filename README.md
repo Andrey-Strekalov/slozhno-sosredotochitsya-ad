@@ -1,2 +1,1 @@
-[.
-](https://github.com/Andrey-Strekalov/slozhno-sosredotochitsya-ad)
+https://github.com/Andrey-Strekalov/slozhno-sosredotochitsya-ad
