@@ -4,11 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
     <title>Сложно сосредоточиться</title>
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/dark.css" />
+    <link rel="stylesheet" href="./styles/light.css" />
     <script src="./scripts/script.js"></script>
   </head>
   <body class="page">
     <header class="header decorated-zone">
+      <div class="rec" aria-hidden="true">REC</div>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
@@ -35,6 +45,173 @@
           </li>
         </ul>
       </nav>
+      <h1 class="header__title">noise</h1>
+      <p class="header__description title-decor">
+        Как сосредоточиться,<br />если вокруг — только шум и ничего не помогает
+      </p>
     </header>
+
+    <main class="main">
+      <section class="section">
+        <h2 class="section__title">Почему сложно сосредоточиться</h2>
+        <ul class="section__list">
+          <li class="card">
+            <h3 class="card__title title-decor">Многозадачность</h3>
+            <p class="card__text">
+              Мозг постоянно переключается между задачами, что消耗 энергию и снижает продуктивность. 
+              Исследования показывают, что на возвращение к прерванной задаче уходит до 25 минут.
+            </p>
+          </li>
+          <li class="card">
+            <h3 class="card__title title-decor">Информационный шум</h3>
+            <p class="card__text">
+              Уведомления, сообщения, реклама — всё это создаёт когнитивную перегрузку. 
+              Даже кратковременное отвлечение увеличивает количество ошибок.
+            </p>
+          </li>
+          <li class="card">
+            <h3 class="card__title title-decor">Недостаток сна</h3>
+            <p class="card__text">
+              Недосып напрямую влияет на внимание и память. Взрослому человеку необходимо 
+              7–9 часов качественного сна для полноценной работы мозга.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2 class="section__title">Что делать при невнимательности</h2>
+        <ul class="section__list section__list_wide">
+          <li class="card">
+            <h3 class="card__title title-decor">Техника «Помидора»</h3>
+            <p class="card__text">
+              Работайте интервалами: 25 минут концентрации, затем 5 минут отдыха. 
+              После четырёх циклов сделайте длинный перерыв 15–30 минут.
+            </p>
+          </li>
+          <li class="card">
+            <h3 class="card__title title-decor">Цифровой детокс</h3>
+            <p class="card__text">
+              Отключите уведомления на время работы, используйте блокировщики отвлекающих сайтов. 
+              Выделите час в день без гаджетов.
+            </p>
+          </li>
+          <li class="card">
+            <h3 class="card__title title-decor">Упражнения на внимательность</h3>
+            <p class="card__text">
+              Медитация и дыхательные практики тренируют способность удерживать фокус. 
+              Начните с 5 минут в день, постепенно увеличивая время.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2 class="section__title">Методы борьбы с прокрастинацией</h2>
+        <ul class="section__list">
+          <li class="card">
+            <h3 class="card__title title-decor">Правило двух минут</h3>
+            <p class="card__text">
+              Если задача занимает меньше двух минут — сделайте её сразу. Это помогает 
+              избежать накопления мелких дел, которые отвлекают от важного.
+            </p>
+          </li>
+          <li class="card">
+            <h3 class="card__title title-decor">Разбивка на этапы</h3>
+            <p class="card__text">
+              Большие проекты пугают. Разделите их на маленькие, конкретные шаги. 
+              Завершение каждого шага даёт чувство прогресса.
+            </p>
+          </li>
+          <li class="card">
+            <h3 class="card__title title-decor">Вознаграждение</h3>
+            <p class="card__text">
+              Пообещайте себе приятный бонус после выполнения сложной задачи. 
+              Это повышает мотивацию и формирует полезную привычку.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2 class="section__title">Почему нам так сложно сосредоточиться</h2>
+        <article class="card card_fullwidth">
+          <h3 class="card__title title-decor">Современный ритм жизни</h3>
+          <p class="card__text">
+            Постоянная спешка, высокие ожидания и поток информации заставляют мозг работать на пределе. 
+            Мы теряем способность к глубокой работе, потому что нас приучили к быстрым переключениям.
+          </p>
+        </article>
+        <article class="card card_fullwidth">
+          <h3 class="card__title title-decor">Эволюционные ловушки</h3>
+          <p class="card__text">
+            Наш мозг запрограммирован реагировать на новизну — это помогало выживать. 
+            Сегодня эта особенность делает нас уязвимыми для бесконечного потока новостей и уведомлений.
+          </p>
+        </article>
+      </section>
+
+      <section class="section section_image">
+        <h2 class="section__title">Как концентрироваться лучше</h2>
+        <div class="image-block">
+          <img
+            src="./images/cover.png"
+            alt="Абстрактное изображение концентрации"
+            class="image-block__img"
+            loading="lazy"
+          />
+          <p class="image-block__text title-decor">
+            Создайте правильную среду: тишина, порядок на столе, удобное кресло. 
+            Используйте наушники с шумоподавлением или спокойную музыку без слов.
+          </p>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <h2 class="gallery__title title-decor">Галерея</h2>
+        <div class="gallery__grid">
+          <img
+            src="./images/01.png"
+            alt="Горы в тумане"
+            class="gallery__img"
+            loading="lazy"
+          />
+          <img
+            src="./images/02.png"
+            alt="Пляж с пальмами"
+            class="gallery__img"
+            loading="lazy"
+          />
+          <img
+            src="./images/03.png"
+            alt="Небоскрёб и закат"
+            class="gallery__img"
+            loading="lazy"
+          />
+          <img
+            src="./images/1.png"
+            alt="Абстракция с лучами"
+            class="gallery__img"
+            loading="lazy"
+          />
+          <img
+            src="./images/2.png"
+            alt="Космическая туманность"
+            class="gallery__img"
+            loading="lazy"
+          />
+          <img
+            src="./images/3.png"
+            alt="Город в фиолетовых тонах"
+            class="gallery__img"
+            loading="lazy"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer decorated-zone">
+      <h2 class="footer__title">noise</h2>
+    </footer>
   </body>
 </html>
