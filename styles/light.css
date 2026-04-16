@@ -27,3 +27,17 @@
     --rec-decor-visibility: hidden;
   }
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #fff1f7;
+    --text-color: #353430;
+    --accent-color: #ff8dcb;
+    --title-color: #ffc2e6;
+    --decor-color: #353430;
+    --button-hover: rgba(50, 49, 45, 0.4);
+    --link-shadow: #ff8dcb;
+    --bg-image: url('../images/cover-image-light.jpg');
+    --rec-display: none;
+  }
+}
