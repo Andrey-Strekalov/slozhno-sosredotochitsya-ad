@@ -44,14 +44,3 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
-
-a {
-  text-decoration: none;
-}
-
-/* Дополнительные сбросы */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
